@@ -10,33 +10,36 @@ $darkGreen: #0b4d3c;
 $z-fixed-menu: 100;
 
 //normalize
-@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 
-// setups
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/css/normalize.css");
+
+//setups
+
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,400i,700&display=swap&subset=cyrillic');
 @import "layout";
 
-// components
-@import "components/hero";
-@import "components/header";
-@import "components/features";
-@import "components/feature";
-@import "components/btn";
-@import "components/menu";
-@import "components/phone-number";
-@import "components/section";
-@import "components/headline";
-@import "components/benefits";
-@import "components/benefit";
-@import "components/benefits-section";
-@import "components/reviews";
-@import "components/interactive-avatar";
-@import "components/reviews-section";
-@import "components/order-section";
-@import "components/form";
-@import "components/radio";
-@import "components/map-section";
-@import "components/footer";
-@import "components/socials";
-@import "components/contacts";
-@import "components/fixed-menu";
+//components
+
+@import "./css/components/";
+@import "./css/components/header";
+@import "./css/components/features";
+@import "./css/components/feature";
+@import "./css/components/btn";
+@import "./css/components/menu";
+@import "./css/components/phone-number";
+@import "./css/components/section";
+@import "./css/components/headline";
+@import "./css/components/benefits";
+@import "./css/components/benefit";
+@import "./css/components/benefits-section";
+@import "./css/components/reviews";
+@import "./css/components/interactive-avatar";
+@import "./css/components/reviews-section";
+@import "./css/components/order-section";
+@import "./css/components/form";
+@import "./css/components/radio";
+@import "./css/components/map-section";
+@import "./css/components/footer";
+@import "./css/components/socials";
+@import "./css/components/contacts";
+@import "./css/components/fixed-menu";
