@@ -1,0 +1,19 @@
+.prodacts-section {
+    background: #f8faf9;
+    @include tablets {
+        &:before {
+            background-image: imgPath("./decor/grey-striped-leaf.png");
+            width: 169px;
+            height: 578px;
+            bottom: -356px;
+            right: 0;
+        }
+        &:after {
+            background-image: imgPath("./decor/blackberries.png");
+            width: 135px;
+            height: 112px;
+            bottom: -74px;
+            right: 15px;
+        }
+    }
+}
