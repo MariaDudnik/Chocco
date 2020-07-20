@@ -1,0 +1,12 @@
+.team-section {
+  @include berries {
+    &:after {
+      bottom: -46px;
+      left: 34px;
+      display: block;
+      background-image: imgPath("decor/single-berry.png");
+      width: 104px;
+      height: 114px;
+    }
+  }
+}

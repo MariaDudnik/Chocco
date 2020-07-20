@@ -1,0 +1,39 @@
+.section.player-section {
+    background: #f8faf9;
+    @include berries {
+        &:before {
+            background-image: imgPath("/src/img/decor/blackberry-and-leaves.png");
+            width: 197px;
+            height: 264px;
+            bottom: -104px;
+            right: 0;
+        }
+    }
+}
+
+.player-section__container {
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    width: 660px;
+    height: 405px;
+    border: 1px solid black;
+    @include berries {
+        &:before {
+            background-image: imgPath("/src/img/decor/video-leaf-top.png");
+            width: 90px;
+            height: 77px;
+            top: -16%;
+            right: -16%;
+        }
+        &:after {
+            background-image: imgPath("/src/img/decor/video-leaf-bottom.png");
+            width: 72px;
+            height: 135px;
+            bottom: -10%;
+            left: -22%;
+        }
+    }
+}

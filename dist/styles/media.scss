@@ -1,0 +1,39 @@
+@function rem($px) {
+    @return $px / $baseFontSize+0rem;
+}
+
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width: $phones) {
+        @content;
+    }
+}
+
+@function imgPath($path) {
+    @return url("assets/images/"+$path);
+}
+
+@mixin centered() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin berries() {
+    position: relative;
+    &:after,
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        background: center center / contain no-repeat;
+        z-index: $z-berries;
+    }
+    @content;
+}
